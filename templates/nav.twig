@@ -1,0 +1,25 @@
+{% block nav %}
+
+  <header class="header" role="banner">
+
+    <nav role="navigation">
+      <a class="logo-link" href="{{ site.url }}" rel="home">
+        <picture>
+          <source srcset="
+            {{ function('bloginfo', 'template_directory') }}/assets/images/logo.png 1x,
+            {{ function('bloginfo', 'template_directory') }}/assets/images/logo@2x.png 2x">
+          <img class="logo" src="{{ function('bloginfo', 'template_directory') }}/assets/images/logo.png 1x" alt="AB logo">
+        </picture>
+      </a>
+
+      <ul class="nav-links" role="navigation">
+        <li class="nav-link"><a href="#">Link 1</a></li>
+        <li class="nav-link"><a href="#">Link 2</a></li>
+        <li class="nav-link"><a href="#">Link 3</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+{% endblock %}

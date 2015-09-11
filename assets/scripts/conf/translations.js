@@ -1,0 +1,3 @@
+ab.Translations = {
+  "Welcome": "Bienvenue"
+};

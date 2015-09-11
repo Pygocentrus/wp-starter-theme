@@ -1,0 +1,21 @@
+{
+  "name": "startertheme",
+  "homepage": "http://github.com/Pygocentrus/wp-starter-theme",
+  "authors": [
+    "Pierre Guilhou <pierre.guilhou@hetic.net>"
+  ],
+  "license": "BSD",
+  "private": true,
+  "dependencies": {
+    "gsap": "~1.17.0",
+    "hammerjs": "~2.0.4",
+    "handlebars": "~3.0.3",
+    "jquery": "~2.1.4",
+    "jquery-throttle-debounce": "*",
+    "lodash": "~3.10.0",
+    "modernizr": "2.8.2",
+    "picturefill": "~2.3.1",
+    "PubSubJS": "pubsub-js#~1.5.2",
+    "ramda": "~0.17.1"
+  }
+}

@@ -1,0 +1,50 @@
+html, body {
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+           font-smoothing: antialiased;
+
+  font-style: $font-size;
+  font-family: $roboto;
+  font-weight: 400;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {}
+
+h2 {}
+
+p {}
+
+strong {}
+
+button:focus, a:focus, textarea:focus, input:focus {
+  outline: 0;
+}
+
+button::-moz-focus-inner, a::-moz-focus-inner {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Fixes Bootstrap 3 grid box-sizing */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.container .row *,
+.container .row *:before,
+.container .row *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

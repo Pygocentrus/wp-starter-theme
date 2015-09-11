@@ -1,0 +1,52 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie9 lt-ie8 lt-ie7" {{ site.language_attributes }}> <![endif]-->
+<!--[if IE 7]><html class="no-js ie ie7 lt-ie9 lt-ie8" {{ site.language_attributes }}> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 lt-ie9" {{ site.language_attributes }}> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link href="{{ function('bloginfo', 'template_directory') }}/assets/images/logo.jpg" rel="shortcut icon">
+    <link href="{{ function('bloginfo', 'template_directory') }}/assets/images/logo.jpg" rel="apple-touch-icon-precomposed">
+
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <link href="{{ site.pingback_url }}" rel="pingback"/>
+
+    <title>{{ function('get_meta_title', post.meta_title, title) }}</title>
+    <meta name="description" content="{{ function('get_meta_description', post.meta_description) }}">
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{{ function('get_meta_title', post.social_title) }}">
+    <meta itemprop="description" content="{{ function('get_meta_description', post.social_description) }}">
+    <meta itemprop="image" content="{{ function('get_meta_social_cover', post.social_image) }}">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="{{ function('get_meta_url') }}">
+    <meta name="twitter:title" content="{{ function('get_meta_title', post.social_title) }}">
+    <meta name="twitter:description" content="{{ function('get_meta_description', post.social_description) }}">
+    <meta name="twitter:creator" content="{{ function('get_meta_twitter_account') }}">
+    <meta name="twitter:image" content="{{ function('get_meta_social_cover', post.social_image) }}">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ function('get_meta_title', post.social_title) }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ function('get_meta_url') }}" />
+    <meta property="og:image" content="{{ function('get_meta_social_cover', post.social_image) }}" />
+    <meta property="og:description" content="{{ function('get_meta_description', post.social_description) }}" />
+    <meta property="og:site_name" content="{{ function('get_meta_title') }}" />
+
+    <!-- Geoposition -->
+    <meta name="geo.placename" content="Paris,75,FRANCE">
+    <meta name="geo.position" content="">
+    <meta name="geo.country" content="FR">
+
+    {{ function('wp_head') }}
+
+  </head>
+
+<body class="{{ body_class}}">

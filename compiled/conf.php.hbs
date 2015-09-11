@@ -1,0 +1,38 @@
+<?php
+
+// DEV or PROD version
+define('DEV', {{ isDev }});
+
+// Timezone
+date_default_timezone_set('Europe/Paris');
+
+// Max input POST vars
+ini_set('max_input_vars', 10000);
+
+// PHP debug
+define('WP_DEBUG', {{ isDev }});
+define('WP_DEBUG_DISPLAY', {{ isDev }});
+@ini_set('display_errors', {{ isDev }});
+
+// Cache management
+define('WP_CACHE', !{{ isDev }});
+
+// Scripts to be enqueued
+$dev_scripts = array(
+  "vendors" => get_template_directory_uri() . '/assets/scripts/vendors.js',
+  "app" => get_template_directory_uri() . '/assets/scripts/app.js'
+);
+
+$prod_scripts = array(
+  "vendors" => get_template_directory_uri() . '/dist/scripts/{{ jsVendorsProd }}',
+  "app" => get_template_directory_uri() . '/dist/scripts/{{ jsCustomProd }}'
+);
+
+// Styles to be enqueued
+$dev_styles = array(
+  "app" => get_template_directory_uri() . '/assets/styles/app.css'
+);
+
+$prod_styles = array(
+  "app" => get_template_directory_uri() . '/dist/styles/{{ cssProd }}'
+);

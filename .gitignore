@@ -1,0 +1,16 @@
+**/.DS_Store
+
+.sass-cache
+
+dist
+
+node_modules
+
+bower_components
+
+assets/styles/app.css
+assets/scripts/app.js
+assets/scripts/vendors.js
+assets/scripts/templates.js
+
+dploy.yml

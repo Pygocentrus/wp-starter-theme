@@ -1,0 +1,51 @@
+{
+  "name": "startertheme",
+  "version": "1.0.0",
+  "description": "WP Starter theme theme",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.7.13",
+    "del": "^1.2.0",
+    "event-stream": "^3.3.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-combine-media-queries": "^0.2.0",
+    "gulp-compile-handlebars": "^0.5.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-css-base64": "^1.3.2",
+    "gulp-declare": "^0.3.0",
+    "gulp-filesize": "^0.0.6",
+    "gulp-foreach": "^0.1.0",
+    "gulp-gzip": "^1.2.0",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^5.1.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sequence": "^0.4.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-wrap": "^0.11.0",
+    "imagemin-jpeg-recompress": "^4.3.0",
+    "imagemin-pngquant": "^4.1.2",
+    "run-sequence": "^1.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deps": "echo \"Fetching dependencies...\" && npm install && bower install",
+    "serve": "gulp serve",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://github.com/Pygocentrus/wp-starter-theme"
+  },
+  "author": "Pierre Guilhou <pierre.guilhou@hetic.net>",
+  "license": "BSD",
+  "bugs": {
+    "url": "http://github.com/Pygocentrus/wp-starter-theme/issues"
+  },
+  "homepage": "http://github.com/Pygocentrus/wp-starter-theme#readme"
+}
