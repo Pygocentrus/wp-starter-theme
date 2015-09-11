@@ -7,10 +7,6 @@ ab.Controller.common.init = function () {
 
   ab.Controller.fn.initResizeHandler();
   ab.Controller.fn.initHandlebarsHelpers();
-
-  ab.Controller.fn.initSearch();
-  ab.Controller.fn.initLogin();
-
   ab.Controller.fn.loadGoogleAnalytics();
 };
 
@@ -36,14 +32,6 @@ ab.Controller.fn.initResizeHandler = function () {
   }});
 
   ab.Services.Resize.watch();
-};
-
-ab.Controller.fn.initSearch = function () {
-  var searchModule = new ab.Modules.Search();
-};
-
-ab.Controller.fn.initLogin = function () {
-  var loginModule = new ab.Modules.Login();
 };
 
 ab.Controller.fn.initHandlebarsHelpers = function() {
